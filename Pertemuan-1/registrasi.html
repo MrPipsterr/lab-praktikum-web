@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 1 - Registrasi</title>
+</head>
+<body>
+    <form action="">
+        <h2>Ini adalah form registrasi pendaftaran kepanitiaan Piala Dunia 2026.</h2>
+        <hr>
+        <div class="input-data">
+            <!-- Untuk menginput data nama dan umur -->
+            <label for="fullname">Nama Lengkap:</label><br>
+            <input type="" id="" name="name" placeholder="Masukkan Nama" minlength="3" required><br>
+            <label for="age">Usia:</label><br>
+            <input type="number" id="" name="age" placeholder="Masukkan Usia" required><br>
+            
+            <!-- Menggunakan input type radio untuk menginput gender -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Pria</label>
+            <input type="radio" id="female" name="gender" value="female" checked>
+            <label for="female">Wanita</label><br><br>
+            
+            <!-- Menggunakan tag option untuk menginput kebangsaan -->
+            <label for="country">Kebangsaan:</label>
+            <select id="country" name="country">
+                <option value="usa">United States</option>
+                <option value="indonesia">Indonesia</option>
+                <option value="japan">Japan</option>
+                <option value="korea">Korea</option>
+                <option value="brazil">Brazil</option>
+                <option value="france">France</option>
+                <option value="konoha">Konoha</option>
+            </select>
+        </div>
+        <div class="input-division">
+            <h3>*Pastikan anda sudah menonton video ketentuan pendaftaran di bawah ini*</h3>
+            <iframe width="500" height="255" src="https://www.youtube.com/embed/xS6KwiblTOs?si=MInwftOu2b5ndp9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p><b>Pada divisi apa anda ingin mendaftar?</b></p>
+            <!-- Menggunakan tag option untuk menginput divisi -->
+            <select id="division" name="division">
+                <option value="acara">Acara</option>
+                <option value="perlengkapan">Perlengkapan</option>
+                <option value="keamanan">Keamanan</option>
+                <option value="kebersihan">Kebersihan</option>
+                <option value="dana">Dana</option>
+                <option value="konsumsi">Konsumsi</option>
+                <option value="merchandise">Merchandise</option>
+            </select>
+            <!-- Menggunakan tag textarea untuk mengisi motivasi mendaftar -->
+            <p><b>Apa motivasi anda mendaftar divisi tersebut?</b></p>
+            <textarea id="bio" name="bio" rows="10" cols="100"></textarea>
+
+            <p><b>Apakah anda memiliki skill/kemampuan lain yang bisa berguna bagi keberlangsungan kepanitiaan? *opsional</b></p>
+            <input type="" id="" name="other-skill">
+        </div>
+        <br>
+        <button type="submit">Submit</button> 
+    </form>
+</body>
+</html>
