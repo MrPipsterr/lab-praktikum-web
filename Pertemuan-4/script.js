@@ -21,7 +21,7 @@ for (let i of karakter) {
     if (i === " ") {
         new_karakter += " "
     } else {
-        Jika karakter bukan spasi, enkripsi karakter dengan menggesernya, menambahkan karakter yang telah digeser ke 'new_karakter'
+        //Jika karakter bukan spasi, enkripsi karakter dengan menggesernya, menambahkan karakter yang telah digeser ke 'new_karakter'
         new_karakter += huruf[((huruf.indexOf(i) + geser) % huruf.length)] 
     }
 }
@@ -34,7 +34,7 @@ let text = prompt("Kata : ").toLocaleLowerCase();
 let reverse = ""; 
 
 for (let i of text) {
-    reverse = i + reverse;
+    reverse = i + reverse; // mengakses tiap huruf pada variabel text dan ditaruh ke variabel reverse
 }
 
 if (reverse === text) {
@@ -63,10 +63,10 @@ let angka = parseInt(prompt("Masukkan Angka : "))
 let binary = ""
 
 while (true){
-    binary = String(angka % 2) + binary
-    angka = Math.floor(angka / 2) 
+    binary = String(angka % 2) + binary // mengecek berapa modulo binary
+    angka = Math.floor(angka / 2) // membagi angka dengan deua dan dibulatkan kebawah
     if (angka === 0) {
-        break
+        break // jika angka = 0, maka perulangan while berhenti
     } 
 }
 
